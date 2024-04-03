@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #FFA07A; /* salm�o */
+    background-color: #FFA07A; /* salmão */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,17 +23,20 @@ body {
 .heart::before,
 .heart::after {
     content: "";
-    width: 100px;
-    height: 130px;
+    width: 50px; /* ajustado para metade da largura do coração */
+    height: 80px; /* ajustado para a altura do coração */
     border-radius: 50%;
     background-color: black; /* preto */
     position: absolute;
-    left: 50px;
     top: 0;
 }
 
+.heart::before {
+    left: 50px; /* ajustado para o lado direito do coração */
+}
+
 .heart::after {
-    left: 0;
+    left: 0; /* mantido no lado esquerdo do coração */
 }
 
 h1 {
@@ -53,12 +56,12 @@ button {
     font-size: 18px;
     cursor: pointer;
     border: none;
-    background-color: #FFA07A; /* salm�o */
+    background-color: #FFA07A; /* salmão */
     color: white;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #CD5C5C; /* tom mais escuro de salm�o */
+    background-color: #CD5C5C; /* tom mais escuro de salmão */
 }
